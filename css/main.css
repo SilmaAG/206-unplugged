@@ -129,11 +129,11 @@ p {
 }
 
 img {
-
+ width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -159,6 +159,14 @@ footer {
 
 header {
   padding: 15px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper {
@@ -238,10 +246,14 @@ footer .copyright {
 /* -------------------- Homepage -------------------- */
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 
 .hero-area h1 {
   font-size: 2.25em;
@@ -249,9 +261,6 @@ footer .copyright {
   font-weight: 500;
   line-height: 1.2;
 }
-
-
-
 
 
 aside {
@@ -263,6 +272,8 @@ aside {
 }
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -507,7 +518,7 @@ h3 {
    }
 
    header figure {
-     width: 30%;
+     width: 35%;
    }
 
    header nav {
@@ -523,6 +534,11 @@ h3 {
    }
 
 /*----------- HERO AREA ------------- */
+
+.hero-area {
+  min-height: 600px;
+}
+
 
 .hero-area h1 {
   font-size: 3em;
@@ -572,9 +588,15 @@ aside .content-wrapper .form {
    justify-content: space-between;
  }
 
- .reviews article div {
+.reviews h2 {
+  width: 85%;
+}
+
+.reviews article figure,
+.reviews article div {
    width: 49%;
  }
+
 
  .reviews h3 {
    width: 75%;
@@ -669,6 +691,10 @@ header {
     padding: 15px 0;
   }
 
+  header figure {
+    width: 25%;
+  }
+
 .content-wrapper {
   max-width: 960px;
 }
@@ -690,7 +716,7 @@ h2 {
 /* Hero Area */
 
 .hero-area h1 {
-  width: 60%;
+  width: 80%;
   font-size: 3.75em;
 }
 
